@@ -23,8 +23,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   display: block; }
 
 video {
-  width: 100%    !important;
-  height: auto   !important;
+max-width: 100%;
 }
 
 audio, canvas, progress{
