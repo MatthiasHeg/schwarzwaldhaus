@@ -24,7 +24,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 
 audio, canvas, progress, video {
   display: inline-block;
-  vertical-align: baseline; }
+  object-fit: fill;
+  vertical-align: middle; }
 
 audio:not([controls]) {
   display: none;
