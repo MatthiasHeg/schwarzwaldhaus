@@ -22,7 +22,12 @@ body {
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block; }
 
-audio, canvas, progress, video {
+video {
+  width: 100%    !important;
+  height: auto   !important;
+}
+
+audio, canvas, progress{
   display: inline-block;
   object-fit: fill;
   vertical-align: middle; }
