@@ -23,9 +23,9 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   display: block; }
 
 video {
-max-width: 100%;
-display: block;
-margin: 0 auto;
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
 }
 
 audio, canvas, progress{
