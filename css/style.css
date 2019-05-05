@@ -25,7 +25,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 video {
   display: block;
   margin: 0 auto;
-  height: 100%;
+  width: 100%;
 }
 
 audio, canvas, progress{
