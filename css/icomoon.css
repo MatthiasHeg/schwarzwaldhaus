@@ -23,9 +23,7 @@
 	-moz-osx-font-smoothing: grayscale;
 }
 
-.icon-paint-format:before{
-	content:"\e90c";
-}
+
 .icon-add-to-list:before {
 	content: "\e600";
 }
