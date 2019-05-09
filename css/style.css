@@ -5244,13 +5244,13 @@ h1, h2, h3, h4, h5, h6 {
   padding-left: 40px;
   padding-right: 40px;
   margin-bottom: 0;
-  background: transparent;
+  background: rgba(255, 255, 255, 0.1);
   /* NavbarColor */
-  -webkit-box-shadow: transparent;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.1);
   -moz-box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.1);
   -ms-box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.1);
   box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.1);
-  
+
   font-size: 13px;
   border: transparent; }
 @media screen and (max-width: 480px) {
