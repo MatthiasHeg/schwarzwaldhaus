@@ -2935,7 +2935,8 @@ tbody.collapse.in {
   padding: 3px 20px;
   font-size: 12px;
   line-height: 1.42857;
-  color: #777777;
+  /* color: #777777; old version*/
+  color: transparent;
   white-space: nowrap; }
 
 .dropdown-backdrop {
@@ -2948,6 +2949,7 @@ tbody.collapse.in {
 
 .pull-right > .dropdown-menu {
   right: 0;
+  color: #777777;
   left: auto; }
 
 .dropup .caret, .navbar-fixed-bottom .dropdown .caret {
@@ -3439,8 +3441,7 @@ tbody.collapse.in {
     border: 0;
     box-shadow: none; }
   .navbar-nav .open .dropdown-menu > li > a, .navbar-nav .open .dropdown-menu .dropdown-header {
-    padding: 5px 15px 5px 25px;
-    background-color: rgba(255, 255, 255, 0.5); }
+    padding: 5px 15px 5px 25px; }
   .navbar-nav .open .dropdown-menu > li > a {
     line-height: 20px; }
   .navbar-nav .open .dropdown-menu > li > a:hover, .navbar-nav .open .dropdown-menu > li > a:focus {
