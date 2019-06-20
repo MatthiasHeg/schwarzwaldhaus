@@ -2,7 +2,7 @@
 
 //update.php
 
-$connect = new PDO('mysql:host=localhost;dbname=testing', 'root', '');
+$connect = new PDO('mysql:host=localhost;dbname=Ft8GucJHvx;port=3306', 'Ft8GucJHvx', '3mt7Pu17Ql');
 
 if(isset($_POST["id"]))
 {
