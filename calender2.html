@@ -127,10 +127,45 @@
    					Kalender
    					<span class="fh5co-border"></span>
    				</h1>
-          <iframe src="https://schwarzwaldhaus.skedda.com/booking?embedded=true" style="width: 100%; height: 1000px;"></iframe>
+          <button onclick="resizeIframe()">Change</button>
+          <iframe id="skedda" src="https://schwarzwaldhaus.skedda.com/booking?embedded=true" style="width: 100%; height: 1000px;"></iframe>
    			</div>
    		</div>
    	</div>
+
+    <script>
+    // adjust iframe
+    var buffer = 20; //scroll bar buffer
+    var iframe = document.getElementById('skedda');
+
+    function pageY(elem) {
+        return elem.offsetParent ? (elem.offsetTop + pageY(elem.offsetParent)) : elem.offsetTop;
+    }
+
+    function resizeIframe() {
+        var height = document.documentElement.clientHeight;
+        height -= pageY(document.getElementById('skedda'))+ buffer ;
+
+        //iframe min height 700px
+        if(height < 700){
+            height = 700;
+        }else{
+            height = height;
+        }
+
+        console.log(document.getElementById('skedda').header);
+    }
+
+    // .onload doesn't work with IE8 and older.
+    // if (iframe.attachEvent) {
+    //     iframe.attachEvent("onload", resizeIframe);
+    // } else {
+    //     iframe.onload=resizeIframe;
+    // }
+    //
+    // window.onresize = resizeIframe;
+</script>
+
    </aside>
 
 <div class="fh5co-spacer fh5co-spacer-lg"></div>
